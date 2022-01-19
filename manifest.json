@@ -1,18 +1,15 @@
 {
-    "manifest_version": 2,
-  
-    "name": "Progress Bar",
-    "description": "Adds a progress bar to the top of your pages",
-    "version": "1.2",
-    "content_scripts":[{
-        "matches": ["<all_urls>"],
-        "js": ["scrollbar.js"]
-    }],
-    "browser_action": {
-     "default_icon": "logo.png"
-     
-    },
-    "permissions": [
-     "activeTab"
-     ]
+  "manifest_version": 3,
+  "name": "Progress Percentage",
+  "description": "Displays the percentage of a page scrolled on the top right corner",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scrollbar.js"]
+    }
+  ],
+  "action": {
+    "default_icon": "percent.png"
   }
+}
